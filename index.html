@@ -3,7 +3,7 @@
 <link rel="icon" type="image/png" href="favicon.bmp" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Blockly@rduino</title>
-<!-- <script type="text/javascript" src="core_blockly/blockly_uncompressed.js"></script> -->
+<!-- <script type="text/javascript" src="core_Blockly/blockly_uncompressed.js"></script> -->
 <script type="text/javascript" src="core_Blockly/blockly_compressed.js"></script>
 
 <!-- needed for type of variable -->
@@ -26,6 +26,14 @@
 <script type="text/javascript" src="core_BlocklyArduino/bootstrap.min.3.3.6.js"></script>
 <script type="text/javascript" src="core_BlocklyArduino/bootstrap-toggle.min.js"></script>
 <script type="text/javascript" src="core_BlocklyArduino/prettify.js"></script>
+
+<!--script type="text/javascript" src="blocks/Blockly/control.js"></script>
+<script type="text/javascript" src="blocks/Blockly/lists.js"></script>
+<script type="text/javascript" src="blocks/Blockly/logic.js"></script>
+<script type="text/javascript" src="blocks/Blockly/math.js"></script>
+<script type="text/javascript" src="blocks/Blockly/procedures.js"></script>
+<script type="text/javascript" src="blocks/Blockly/text.js"></script>
+<script type="text/javascript" src="blocks/Blockly/variables.js"></script-->
 <!-- define all blocks from one resumer-->
 <script type="text/javascript" src="blocks/arduino_resume.js"></script>
 <script type="text/javascript" src="blocks/blocks_colors.js"></script>
@@ -433,11 +441,11 @@
       </div>
 	  <div class="modal-body text-center" id="convert_content">
 		<input id="ti1" value="TEST" />
-		<button onclick="BlocklyDuino.text2bin();">Texte -> binaire</button>
+		<button onclick="BlocklyDuino.text2bin();"><span id="span_txt2bin"> </span></button>
 		<input id="ti2" />
 		<br/>
 		<input id="ti3" value="01010101" />
-		<button onclick="BlocklyDuino.bin2text();">Binaire -> texte</button>
+		<button onclick="BlocklyDuino.bin2text();"><span id="span_bin2txt"> </span></button>
 		<input id="ti4" />
 	  </div>
 	</div>
@@ -491,11 +499,11 @@
 			<label id="labelToolboxDefinition"></label> 
 			<select id="toolboxes">
 				<option value="toolbox_none" selected="selected">...</option>
-				<option value="toolbox_algo">Algorithme simple</option>
-				<option value="toolbox_arduino_1">Arduino pour débutants</option>
-				<option value="toolbox_arduino_2">Arduino pour habitués</option>
-				<option value="toolbox_arduino_3">Arduino pour experts</option>
-				<option value="toolbox_arduino_all">TOUT</option>
+				<option value="toolbox_algo"><span id="span_toolbox_algo"> </span>????</option>
+				<option value="toolbox_arduino_1"><span id="span_toolbox_arduino_1"> </span>Arduino pour débutants</option>
+				<option value="toolbox_arduino_2"><span id="span_toolbox_arduino_2"> </span>Arduino pour habitués</option>
+				<option value="toolbox_arduino_3"><span id="span_toolbox_arduino_3"> </span>Arduino pour experts</option>
+				<option value="toolbox_arduino_all"><span id="span_toolbox_all"> </span>TOUT</option>
 			</select>
 		</div>
       <input type="checkbox" name="select_all" id="select_all"/> <span id="span_select_all"> </span>

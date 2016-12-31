@@ -1,3 +1,4 @@
+{
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/BlocklyArduino/array.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/BlocklyArduino/control.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/BlocklyArduino/lists.js"));
@@ -28,6 +29,7 @@ $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "gene
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/fischertechnik.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/flycamone-eco-v2.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/grove.js"));
+$('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/icn.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/jeulin_maquette_feux.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/kit_velo_niv1.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/kit_velo_niv2.js"));
@@ -48,3 +50,4 @@ $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "gene
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/zumo_auto.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/zumo_motors.js"));
 $('head').append($('<script>').attr('type', 'text/javascript').attr('src', "generators/arduino/zumo_sensors.js"));
+}

@@ -26,6 +26,7 @@ Blockly.Blocks.EsusBoard.HUE = "#2475FA";
 Blockly.Blocks.fischertechnik.HUE = "#778E9A";
 Blockly.Blocks.flycam.HUE = "#46C286";
 Blockly.Blocks.grove.HUE = "#8ec31f";
+Blockly.Blocks.icn.HUE = "#FF8C00";
 Blockly.Blocks.jeulin_appel_pieton.HUE = "#0099FF";
 Blockly.Blocks.ledRGB_WS2812B.HUE = "#CAC7BE";
 Blockly.Blocks.mBot_1.HUE = "#33C7F2";
